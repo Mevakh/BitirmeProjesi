@@ -140,7 +140,7 @@ export default function AccountPage() {
                               <p>Your wishlist is empty</p>
                             )}
                             {!session && (
-                              <p>Login to add products to your wishlist</p>
+                              <p>İstek listenize ürün eklemek için giriş yapın</p>
                             )}
                           </>
                         )}
@@ -194,16 +194,16 @@ export default function AccountPage() {
                            onChange={ev => setCountry(ev.target.value)}/>
                     <Button black block
                             onClick={saveAddress}>
-                      Save
+                      Kaydet
                     </Button>
                     <hr/>
                   </>
                 )}
                 {session && (
-                  <Button primary onClick={logout}>Logout</Button>
+                  <Button primary onClick={logout}>Çıkış Yap</Button>
                 )}
                 {!session && (
-                  <Button primary onClick={login}>Login with Google</Button>
+                  <Button primary onClick={login}>Google Giriş Yap</Button>
                 )}
               </WhiteBox>
             </RevealWrapper>

@@ -159,8 +159,8 @@ export default function CartPage() {
         <Center>
           <ColumnsWrapper>
             <Box>
-              <h1>Thanks for your order!</h1>
-              <p>We will email you when your order will be sent.</p>
+              <h1>Siparişiniz için teşekkürler!</h1>
+              <p>Siparişiniz gönderildiğinde size e-posta göndereceğiz.</p>
             </Box>
           </ColumnsWrapper>
         </Center>
@@ -176,15 +176,15 @@ export default function CartPage() {
             <Box>
               <h2>Cart</h2>
               {!cartProducts?.length && (
-                <div>Your cart is empty</div>
+                <div>Sepetiniz boş</div>
               )}
               {products?.length > 0 && (
                 <Table>
                   <thead>
                   <tr>
-                    <th>Product</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
+                    <th>Ürün</th>
+                    <th>Miktar</th>
+                    <th>Fiyat</th>
                   </tr>
                   </thead>
                   <tbody>
@@ -265,7 +265,7 @@ export default function CartPage() {
                        onChange={ev => setCountry(ev.target.value)}/>
                 <Button black block
                         onClick={goToPayment}>
-                  Continue to payment
+                 Ödemeye devam
                 </Button>
               </Box>
             </RevealWrapper>

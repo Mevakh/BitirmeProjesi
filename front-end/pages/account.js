@@ -113,7 +113,7 @@ export default function AccountPage() {
                     {orderLoaded && (
                       <div>
                         {orders.length === 0 && (
-                          <p>Login to see your orders</p>
+                          <p>Siparişlerinizi görmek için giriş yapın</p>
                         )}
                         {orders.length > 0 && orders.map(o => (
                           <SingleOrder {...o} />
@@ -137,7 +137,7 @@ export default function AccountPage() {
                         {wishedProducts.length === 0 && (
                           <>
                             {session && (
-                              <p>Your wishlist is empty</p>
+                              <p>İstek listeniz boş</p>
                             )}
                             {!session && (
                               <p>İstek listenize ürün eklemek için giriş yapın</p>
